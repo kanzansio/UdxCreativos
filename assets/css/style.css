@@ -2,8 +2,10 @@
  Configuracion basica
  * -------------------------------------------------------------------
  */
+
 body {
   background-color: #000000;
+  background-image: url('assets/img/UdxCreativos_icono.svg');
   background-repeat: repeat;
   color: white;
   font-family: 'Oswald', sans-serif;
@@ -19,15 +21,23 @@ body {
  *
  * -------------------------------------------------------------------
  */
+  /* Calculation */
+  * {
+  --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420))); /* Ranges from 421px to 1199px */
+}
+
+
 
 h1 {
   text-transform: uppercase;
   font-family:Impact;
-  letter-spacing: 2em;
   display: inline-block;
   position: absolute;
-  font-size: 14px;
+  --max-font: 185;
+  --min-font: 100;
+  font-size: var(--responsive);
 }
+
 
 /**
  * Sitio
@@ -96,7 +106,7 @@ h1 {
   line-height: 1;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 30%;
   transform: translateX(-50%) translateY(-50%);
   user-select: none;
 }
@@ -129,7 +139,7 @@ h1 {
   left: 50%;
   opacity: 0.2;
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
   transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
@@ -234,7 +244,7 @@ h1 {
 
  svg {
      display: block;
-     font: 9em 'Bebas Neue';
+     font: 100% 'Bebas Neue';
      width: 800px;
      height: 200px;
      margin: 0 auto;
