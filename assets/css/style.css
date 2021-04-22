@@ -34,7 +34,7 @@ h1 {
   display: inline-block;
   position: absolute;
   --max-font: 185;
-  --min-font: 100;
+  --min-font: 850;
   font-size: var(--responsive);
 }
 
