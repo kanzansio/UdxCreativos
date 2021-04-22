@@ -1,18 +1,24 @@
 {
     "name": "Udx Creativos | Agencia Crowdsourcing Enfocada en Seo",
-    "short_name": "Udx Creativos ",
-    "start_url": "/index.html",
-    "display": "Standalone",
+  "short_name": "Udx Creativos",
+  "description": "Seo y Marketing en Mérida, Yucatán, México, tu mejor opción en soluciones específicas digitales",
+  "lang": "es-MX",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "000",
     "background_color": "#000",
-    "description": "Seo y Marketing en Mérida, Yucatán, México, tu mejor opción en soluciones específicas digitales",
     "orientation":"SDSDSD",
     "icons": [{
       "src": "assets/img/udx _48-seo-moviles.png",
       "sizes": "48x48",
       "type": "image/png"
     }, {
-      "src": "assets/img/udx _72-seo-moviles.png",
-      "sizes": "72x72",
+        "src": "assets/img/udx _48-seo-moviles.",
+        "sizes": "512x512",
+        "type": "image/png"
+      }, {
+      "src": "assets/img/udx_facebook-seo.png",
+      "sizes": "200x200",
       "type": "image/png"
     }]
   }
