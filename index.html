@@ -56,24 +56,27 @@
 <!-- Fuentes -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 <!-- Css  -->
 <link rel="stylesheet" href="/assets/css/style.css">
+<!-- Preloand-->
+<link rel="preload" href="/assets/css/style.css" as="style">
+<link rel="preload" href="/assets/js/script.js" as="script">
+<link rel="preconnect" href="//js.hsforms.net/forms/shell.js">
 </head>
 <!-- Maqueta -->
 <body>
 <div class="site-wrap">
   <div class="panel-wrap animate--none">
     <div class="panel" data-x-pos="0"  data-y-pos="0">
-      <span class="panel__nav panel__nav--up js-up">up</span>
-      <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
-      <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
-      <span class="panel__nav panel__nav--left js-left">left</span>
-      <span class="panel__nav panel__nav--right js-right">right</span>
-      <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
-      <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
-      <span class="panel__nav panel__nav--down js-down">down</span>
+      <span class="panel__nav panel__nav--up js-up">Creacion de contenido</span>
+      <span class="panel__nav panel__nav--right-top js-up js-right">Redes Sociales</span>
+      <span class="panel__nav panel__nav--left-top js-up js-left">SEO</span>
+      <span class="panel__nav panel__nav--right-down js-down js-right">Team</span>
+      <span class="panel__nav panel__nav--left-down js-down js-left">Servidores</span>
+      <!-- Zoom -->
       <span class="panel__zoom js-zoom"><h2>Agencia Crowdsourcing Enfocada en Seo</h2></span>
-   
+   <!-- Texto animado -->
        <h1>
         <svg viewBox="0 0 960 300">
           <symbol id="s-text">
@@ -88,15 +91,11 @@
           </g>
         </svg>
         </h1>
-      
-  
-      
-
       <!-- Menu principal -->
       <div class="panel__animation-list">
-        <span class="js-animation active" data-animation="animate--none">Web</span>
-        <span class="js-animation" data-animation="animate--shrink">Marketing</span>
-        <span class="js-animation" data-animation="animate--tilt">Contactanos</span>
+        <span class="js-left">Web</span>
+        <span class="js-right">Marketing</span>
+        <span class="js-down">Contactanos</span>
         <span class="js-animation" data-animation="animate--tilt2">Blog</span>
       </div>
       <!-- Menu principal fin -->
@@ -107,19 +106,19 @@
       <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
       <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h1>Up</h1>
+      <h3>Creacion de contenido</h3>
     </div>
     <div class="panel" data-x-pos="-1"  data-y-pos="1">
       <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
       <span class="panel__nav panel__nav--right js-right">right</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h1>Up Left</h1>
+      <h3>Up Left</h3>
     </div>
     <div class="panel" data-x-pos="1"  data-y-pos="1">
       <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
       <span class="panel__nav panel__nav--left js-left">left</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h1>Up Right</h1>
+      <h3>Up Right</h3>
     </div>
     <div class="panel" data-x-pos="-1"  data-y-pos="0">
       <span class="panel__nav panel__nav--up js-up">up</span>
@@ -127,19 +126,19 @@
       <span class="panel__nav panel__nav--right js-right">right</span>
       <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h1>Left</h1>
+      <h3>Left</h3>
     </div>
     <div class="panel" data-x-pos="-1"  data-y-pos="-1">
       <span class="panel__nav panel__nav--up js-up">up</span>
       <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
       <span class="panel__nav panel__nav--right js-right">right</span>
-      <h1>Down Left</h1>
+      <h3>Down Left</h3>
     </div>
     <div class="panel" data-x-pos="1"  data-y-pos="-1">
       <span class="panel__nav panel__nav--up js-up">up</span>
       <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
       <span class="panel__nav panel__nav--left js-left">left</span>
-      <h1>Down Right</h1>
+      <h3>Down Right</h3>
     </div>
     <div class="panel" data-x-pos="1"  data-y-pos="0">
       <span class="panel__nav panel__nav--up js-up">up</span>
@@ -147,7 +146,7 @@
       <span class="panel__nav panel__nav--left js-left">left</span>
       <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h1>Right</h1>
+      <h3>Right</h3>
     </div>
     <div class="panel" data-x-pos="0"  data-y-pos="-1">
       <span class="panel__nav panel__nav--up js-up">up</span>
@@ -155,12 +154,22 @@
       <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
       <span class="panel__nav panel__nav--left js-left">left</span>
       <span class="panel__nav panel__nav--right js-right">right</span>
-      <span class="panel__nav panel__nav--down js-down">down</span>
-      <h1>Down</h1>
-    </div>
-    <div class="panel" data-x-pos="0"  data-y-pos="-2">
-      <span class="panel__nav panel__nav--up js-up">up</span>
-      <h1>Down 2</h1>
+<div class="box">
+  
+      <h3>Contactanos</h3>
+      <form>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+      <script>
+        hbspt.forms.create({
+        region: "na1",
+        portalId: "8694201",
+        formId: "30a59712-b5a6-47f5-bd0e-86ad412ac44a"
+      });
+      </script>
+          </form>
+</div>
+</div>
+
     </div>
   </div>
 </div>

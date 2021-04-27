@@ -8,7 +8,7 @@
 
 body {
   background-color: #000000;
-  background-image: url('assets/img/UdxCreativos_icono.svg');
+  background-image: url();
   background-repeat: repeat;
   color: white;
   font-family: 'Bebas Neue';
@@ -53,6 +53,13 @@ h2 {
   --min-font: 10;
   font-size: var(--responsive);
 }
+h3 {
+  text-align: center;
+  --max-font: 30;
+  --min-font: 10;
+  font-size: var(--responsive);
+}
+
 
 
 
@@ -292,3 +299,15 @@ h2 {
  @keyframes stroke-offset{
    100% {stroke-dashoffset: -35%;}
  }
+
+ .box {
+  margin: 8%;
+  padding: 10%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #b7b7b7;
+  
+}
