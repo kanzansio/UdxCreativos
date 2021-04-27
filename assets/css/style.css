@@ -3,13 +3,15 @@
  * -------------------------------------------------------------------
  */
 
+ @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue);
+
 
 body {
   background-color: #000000;
   background-image: url('assets/img/UdxCreativos_icono.svg');
   background-repeat: repeat;
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Bebas Neue';
   letter-spacing: 0.2rem;
   margin: 0;
   overflow: hidden;
@@ -198,15 +200,16 @@ h1 {
   opacity: 1;
 }
 .panel__animation-list {
-  font-size: 3.3vmin;
+  font-size: 5.3vmin;
   left: 50%;
   position: absolute;
-  top: 60%;
-  transform: translateX(-50%) translateY(-50%) translateY(14vmin);
+  top: 55%;
+  transform: translateX(-50%) translateY(-50%) translateY(12vmin);
 }
 .panel__animation-list span {
   cursor: pointer;
   display: inline-block;
+  margin: 1%;
   opacity: 0.2;
   position: relative;
   transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
@@ -235,9 +238,6 @@ h1 {
  *
  * -------------------------------------------------------------------
  */
-
- @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue);
-
 
  svg {
      display: block;
