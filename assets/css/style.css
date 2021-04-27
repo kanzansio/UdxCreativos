@@ -41,7 +41,7 @@ h1 {
   line-height: 1;
   position: absolute;
   text-align: center;
-  top: 34%;
+  top: 36%;
   transform: translateX(-50%) translateY(-50%);
   user-select: none;
 }
@@ -201,7 +201,7 @@ h1 {
   font-size: 3.3vmin;
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateX(-50%) translateY(-50%) translateY(14vmin);
 }
 .panel__animation-list span {
