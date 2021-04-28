@@ -19,6 +19,9 @@ body {
   text-transform: uppercase;
 }
 
+.link { color: #ebdc0e; }
+.link:hover { color: #e4bb03; }
+
 /**
  *Etiquetas H
  *
@@ -55,14 +58,14 @@ h2 {
 }
 h3 {
   text-align: center;
-  --max-font: 40;
+  --max-font: 25;
   --min-font: 16;
   font-size: var(--responsive);
 }
 
 h4 {
   text-align: center;
-  --max-font: 20;
+  --max-font: 15;
   --min-font: 8;
   font-size: var(--responsive);
 }
@@ -86,10 +89,20 @@ p {
   display: inline-table;
   left: 50%;
   position: absolute;
-  top: 58%;
+  top: 60%;
   bottom: 5%;
   transform: translateX(-50%) translateY(-50%) translateY(12vmin);
 }
+.cente{
+  font-size: var(--responsive);
+  left: 50%;
+  position: absolute;
+  top: 31%;
+  bottom: 5%;
+  transform: translateX(-50%) translateY(-50%) translateY(12vmin);
+}
+
+
 
 
 
@@ -292,7 +305,6 @@ p {
      height: 200px;
      margin: 0 auto;
  }
- 
  .text-copy {
      fill: none;
      stroke: white;
@@ -301,32 +313,27 @@ p {
      stroke-dashoffset: 0%;
      animation: stroke-offset 5.5s infinite linear;
  }
- 
  .text-copy:nth-child(1){
    stroke: #fcc35a;
    animation-delay: -1;
  }
- 
  .text-copy:nth-child(2){
    stroke: #fde3b4;
    animation-delay: -2s;
  }
- 
  .text-copy:nth-child(3){
    stroke: #fdd997;
    animation-delay: -3s;
  }
- 
  .text-copy:nth-child(4){
    stroke: #f7a610;
    animation-delay: -4s;
- }  
- 
+ }
  .text-copy:nth-child(5){
    stroke: #FDB731;
    animation-delay: -5s;
  }
- 
+
  @keyframes stroke-offset{
    100% {stroke-dashoffset: -35%;}
  }
@@ -340,7 +347,6 @@ p {
  * -------------------------------------------------------------------
  */
  .wrapper {
-  
   display: inline-block;
   position: relative;
 
@@ -414,7 +420,7 @@ p {
 }
 
 .box-front {
-  background-color: #38c459; 
+  background-color: #38c459;
 }
 
 .box-bottom {
@@ -430,7 +436,7 @@ p {
 .fa2 {
   background-color: #263d70;
   color: #e9d417;
-  transform: translate3D(0, 10vh, -10vh) rotateX(-90deg);
+  transform: translate3D(0, 10vh, -10vh) rotateX(-90deg);x
 }
 
 .hu1 {
@@ -438,7 +444,7 @@ p {
 }
 
 .hu2 {
-  background-color: #c9cbcf;
+  background-color: #ffffff;
   color: #d8ab19;
   transform: translate3D(0, 10vh, -10vh) rotateX(-90deg);
 }
