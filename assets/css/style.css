@@ -55,12 +55,27 @@ h2 {
 }
 h3 {
   text-align: center;
-  --max-font: 30;
-  --min-font: 10;
+  --max-font: 40;
+  --min-font: 16;
   font-size: var(--responsive);
 }
 
+h4 {
+  text-align: center;
+  --max-font: 20;
+  --min-font: 8;
+  font-size: var(--responsive);
+}
 
+.box
+{
+  position: relative;
+  
+  padding-left: 8%;
+  padding-top: 2%;
+  padding-right: 8%;
+  
+}
 
 
 
@@ -314,7 +329,7 @@ h3 {
   
   display: inline-block;
   margin: 1%;
-  margin-top: 10%;
+  margin-top: 8%;
   position: relative;
 
 }
