@@ -58,14 +58,14 @@ h2 {
 }
 h3 {
   text-align: center;
-  --max-font: 25;
-  --min-font: 16;
+  --max-font: 20;
+  --min-font: 12;
   font-size: var(--responsive);
 }
 
 h4 {
   text-align: center;
-  --max-font: 15;
+  --max-font: 13;
   --min-font: 8;
   font-size: var(--responsive);
 }
