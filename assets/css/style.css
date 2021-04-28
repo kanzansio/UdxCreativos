@@ -378,7 +378,7 @@ h3 {
   transform: rotateX(90deg) translateZ(75px);
 }
 
-.box_front, .box_bottom {
+.box-front, .box-bottom {
   display: block;
   width: 100%;
   height: 100%;
@@ -386,11 +386,11 @@ h3 {
   top: 0;
 }
 
-.box_front {
+.box-front {
   background-color: #20B886;
 }
 
-.box_bottom {
+.box-bottom {
   background-color: #C4C7CC;
   color: #3B4257;
   transform: translate3D(0, 75px, -75px) rotateX(-90deg);
