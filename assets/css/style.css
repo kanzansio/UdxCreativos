@@ -58,15 +58,15 @@ h2 {
 }
 h3 {
   text-align: center;
-  --max-font: 20;
-  --min-font: 12;
+  --max-font: 23;
+  --min-font: 10;
   font-size: var(--responsive);
 }
 
 h4 {
   text-align: center;
-  --max-font: 13;
-  --min-font: 8;
+  --max-font: 15;
+  --min-font: 6;
   font-size: var(--responsive);
 }
 p {
@@ -76,30 +76,32 @@ p {
 
 .box{
   padding: 5vh;
-  max-width: 80% ;
-  max-height: 80%;
+  max-width: 100% ;
+  max-height: 100%;
   display: inline-table;
 
 }
 .cont{
   --max-font: 19;
-  --min-font: 15;
+  --min-font: 8;
   font-size: var(--responsive);
-  text-align: center;
   display: inline-table;
   left: 50%;
   position: absolute;
-  top: 60%;
-  bottom: 5%;
-  transform: translateX(-50%) translateY(-50%) translateY(12vmin);
+  top: 70%;
+  transform: translateX(-50%) translateY(-50%) translateY(-2vmin);
+  transition: opacity 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+  user-select: none;
 }
 .cente{
-  font-size: var(--responsive);
+ padding: 5%;
+ display: inline-block;
   left: 50%;
   position: absolute;
-  top: 31%;
-  bottom: 5%;
-  transform: translateX(-50%) translateY(-50%) translateY(12vmin);
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%) translateY(-18vmin);
+  transition: opacity 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+  user-select: none;
 }
 
 
@@ -308,7 +310,7 @@ p {
  .text-copy {
      fill: none;
      stroke: white;
-     stroke-dasharray: 6% 29%;
+     stroke-dasharray: 6% 26vmax;
      stroke-width: 5px;
      stroke-dashoffset: 0%;
      animation: stroke-offset 5.5s infinite linear;
@@ -362,8 +364,8 @@ p {
 
 .container {
   display: block;
-  width: 20vh;
-  height: 20vh;
+  width: 12vmax;
+  height: 12vmax;
   margin: 0px auto;
   text-align: center;
   position: relative;
@@ -382,11 +384,11 @@ p {
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  -webkit-transform: rotateX(0deg) translateZ(10vh);
-  -moz-transform: rotateX(0deg) translateZ(10vh);
-  -ms-transform: rotateX(0deg) translateZ(10vh);
-  -o-transform: rotateX(0deg) translateZ(10vh);
-  transform: rotateX(0deg) translateZ(10vh);
+  -webkit-transform: rotateX(0deg) translateZ(6vmax);
+  -moz-transform: rotateX(0deg) translateZ(6vmax);
+  -ms-transform: rotateX(0deg) translateZ(6vmax);
+  -o-transform: rotateX(0deg) translateZ(6vmax);
+  transform: rotateX(0deg) translateZ(6vmax);
   -webkit-transition: all 0.4s cubic-bezier(0.29, 1.53, 0.33, 1.01);
   -moz-transition: all 0.4s cubic-bezier(0.29, 1.53, 0.33, 1.01);
   transition: all 0.4s cubic-bezier(0.29, 1.53, 0.33, 1.01);
@@ -404,11 +406,11 @@ p {
 }
 
 .container:hover {
-  -webkit-transform: rotateX(90deg) translateZ(10vh);
-  -moz-transform: rotateX(90deg) translateZ(10vh);
-  -ms-transform: rotateX(90deg) translateZ(10vh);
-  -o-transform: rotateX(90deg) translateZ(10vh);
-  transform: rotateX(90deg) translateZ(10vh);
+  -webkit-transform: rotateX(90deg) translateZ(6vmax);
+  -moz-transform: rotateX(90deg) translateZ(6vmax);
+  -ms-transform: rotateX(90deg) translateZ(6vmax);
+  -o-transform: rotateX(90deg) translateZ(6vmax);
+  transform: rotateX(90deg) translateZ(6vmax);
 }
 
 .box-front, .box-bottom {
@@ -426,7 +428,7 @@ p {
 .box-bottom {
   background-color: #20B886;
   color: #e9d417;
-  transform: translate3D(0, 10vh, -10vh) rotateX(-90deg);
+  transform: translate3D(0, 6vmax, -6vmax) rotateX(-90deg);
 }
 
 .fa1 {
@@ -436,7 +438,7 @@ p {
 .fa2 {
   background-color: #263d70;
   color: #e9d417;
-  transform: translate3D(0, 10vh, -10vh) rotateX(-90deg);x
+  transform: translate3D(0, 6vmax, -6vmax) rotateX(-90deg);x
 }
 
 .hu1 {
@@ -446,7 +448,7 @@ p {
 .hu2 {
   background-color: #ffffff;
   color: #d8ab19;
-  transform: translate3D(0, 10vh, -10vh) rotateX(-90deg);
+  transform: translate3D(0, 6vmax, -6vmax) rotateX(-90deg);
 }
 
 
@@ -454,46 +456,46 @@ p {
 
 @-webkit-keyframes boxFlip {
   0%, 15% {
-    -webkit-transform: rotateX(0deg) translateZ(11vw);
+    -webkit-transform: rotateX(0deg) translateZ(6vmax);
   }
   35%, 65% {
-    -webkit-transform: rotateX(90deg) translateZ(11vw);
+    -webkit-transform: rotateX(90deg) translateZ(6vmax);
   }
   85%, 100% {
-    -webkit-transform: rotateX(0deg) translateZ(11vw);
+    -webkit-transform: rotateX(0deg) translateZ(6vmax);
   }
 }
 @-moz-keyframes boxFlip {
   0%, 15% {
-    -moz-transform: rotateX(0deg) translateZ(11vw);
+    -moz-transform: rotateX(0deg) translateZ(6vmax);
   }
   35%, 65% {
-    -moz-transform: rotateX(90deg) translateZ(11vw);
+    -moz-transform: rotateX(90deg) translateZ(6vmax);
   }
   85%, 100% {
-    -moz-transform: rotateX(0deg) translateZ(11vw);
+    -moz-transform: rotateX(0deg) translateZ(6vmax);
   }
 }
 @keyframes boxFlip {
   0%, 15% {
-    -webkit-transform: rotateX(0deg) translateZ(11vw);
-    -moz-transform: rotateX(0deg) translateZ(11vw);
-    -ms-transform: rotateX(0deg) translateZ(11vw);
-    -o-transform: rotateX(0deg) translateZ(11vw);
-    transform: rotateX(0deg) translateZ(11vw);
+    -webkit-transform: rotateX(0deg) translateZ(6vmax);
+    -moz-transform: rotateX(0deg) translateZ(6vmax);
+    -ms-transform: rotateX(0deg) translateZ(6vmax);
+    -o-transform: rotateX(0deg) translateZ(6vmax);
+    transform: rotateX(0deg) translateZ(6vmax);
   }
   35%, 65% {
-    -webkit-transform: rotateX(90deg) translateZ(11vw);
-    -moz-transform: rotateX(90deg) translateZ(11vw);
-    -ms-transform: rotateX(90deg) translateZ(11vw);
-    -o-transform: rotateX(90deg) translateZ(11vw);
-    transform: rotateX(90deg) translateZ(11vw);
+    -webkit-transform: rotateX(90deg) translateZ(6vmax);
+    -moz-transform: rotateX(90deg) translateZ(6vmax);
+    -ms-transform: rotateX(90deg) translateZ(6vmax);
+    -o-transform: rotateX(90deg) translateZ(6vmax);
+    transform: rotateX(90deg) translateZ(6vmax);
   }
   85%, 100% {
-    -webkit-transform: rotateX(0deg) translateZ(11vw);
-    -moz-transform: rotateX(0deg) translateZ(11vw);
-    -ms-transform: rotateX(0deg) translateZ(11vw);
-    -o-transform: rotateX(0deg) translateZ(11vw);
-    transform: rotateX(0deg) translateZ(11vw);
+    -webkit-transform: rotateX(0deg) translateZ(6vmax);
+    -moz-transform: rotateX(0deg) translateZ(6vmax);
+    -ms-transform: rotateX(0deg) translateZ(6vmax);
+    -o-transform: rotateX(0deg) translateZ(6vmax);
+    transform: rotateX(0deg) translateZ(6vmax);
   }
 }
