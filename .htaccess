@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.udxcreativos.com [NC]
+RewriteRule ^(.*)$ https://udxcreativos.com$1 [L,R=301]
