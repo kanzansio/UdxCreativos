@@ -32,7 +32,6 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000">
   <meta name="msapplication-TileColor" content="#bd930a">
   <meta name="theme-color" content="#000">
-
 <!-- Para facebook, SMS -->
 <meta property="og:image" content="https://1.bp.blogspot.com/-MjLf4iwz2Cs/YICg4kaEVeI/AAAAAAABT20/64FdNZnMb-sfprTkakUS9qngJACJrTRRQCLcBGAsYHQ/s320/udx%2B_16-udxcreativos-seo-marketing-digital_512-udxcreativos-seo-marketing-digital.png">
 <meta property="og:image:secure_url" content="https://1.bp.blogspot.com/-MjLf4iwz2Cs/YICg4kaEVeI/AAAAAAABT20/64FdNZnMb-sfprTkakUS9qngJACJrTRRQCLcBGAsYHQ/s320/udx%2B_16-udxcreativos-seo-marketing-digital_512-udxcreativos-seo-marketing-digital.png" />
@@ -74,6 +73,31 @@
 <link rel="preload" href="/assets/js/script.js" as="script">
 <link rel="preload" href="/assets/js/prefixfree.min.js" as="script">
 <link rel="preload" href="/assets/css/bebas-neue.css" as="script">
+
+<!-- Analitica-->
+<!-- Facebook-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{your-app-id}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "Analitica.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
 </head>
 
 <!-- Maqueta -->
@@ -110,7 +134,8 @@
           <span class="js-left">│Web Design│</span>
           <span class="js-right">│Marketing│</span>
           <span class="js-down">│Contactanos│</span>
-          <span>│Blog│</span>
+          <span> <a class="link"href="https://udxcreativos.com/SEO-blog/" target="_blank" rel="noopener" rel="dofollow" title="Blog" alt="Blog"> │Blog│ </a>
+            </span>
         </div>
     </div>
     <div class="panel" data-x-pos="0"  data-y-pos="1">
