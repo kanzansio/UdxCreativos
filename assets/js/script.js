@@ -1,3 +1,5 @@
+window.scrollTo(0, 1); 
+
 // Global
 var win = window,
     doc = document;
