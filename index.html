@@ -65,19 +65,23 @@
 <link rel="preload" href="/assets/js/prefixfree.min.js" as="script">
 <link rel="preconnect" href="//js.hsforms.net/forms/shell.js">
 </head>
+
 <!-- Maqueta -->
-<body onload="centrarDiv()" onresize="centrarDiv()"> 
+
+<body>
+
+<div class="site-wrap">
   <div class="panel-wrap animate--none">
     <div class="panel" data-x-pos="0"  data-y-pos="0">
-      <span class="panel__nav panel__nav--up js-up">Contenido</span>
-      <span class="panel__nav panel__nav--right-top js-up js-right">RS</span>
-      <span class="panel__nav panel__nav--left-top js-up js-left">SEO</span>
-      <span class="panel__nav panel__nav--right-down js-down js-right">Team</span>
-      <span class="panel__nav panel__nav--left-down js-down js-left">Servidores</span>
-      <!-- Zoom -->
-      <span class="panel__zoom js-zoom"><h2>Agencia Crowdsourcing Enfocada en Seo</h2></span>
-   <!-- Texto animado -->
-       <h1>
+      <span class="panel__nav panel__nav--up js-up"><h4>Contenido</h4> </span>
+      <span class="panel__nav panel__nav--right-top js-up js-right"><h4>RS</h4></span>
+      <span class="panel__nav panel__nav--left-top js-up js-left"><h4>SEO</h4></span>
+      <span class="panel__nav panel__nav--right-down js-down js-right"><h4>Team</h4></span>
+      <span class="panel__nav panel__nav--left-down js-down js-left"><h4>Servidores</h4></span>
+<!--Zoom-->
+      <h2><span class="panel__zoom js-zoom">Agencia Crowdsourcing Enfocada en Seo</span></h2>
+<!-- Titulo-->
+      <h1>
         <svg viewBox="0 0 960 300">
           <symbol id="s-text">
             <text text-anchor="middle" x="50%" y="80%">Udx Creativos</text>
@@ -91,34 +95,33 @@
           </g>
         </svg>
         </h1>
-      <!-- Menu principal -->
-      <div class="panel__animation-list">
-        <span class="js-left">Web</span>
-        <span class="js-right">Marketing</span>
-        <span class="js-down">Contactanos</span>
-        <span class="js-animation" data-animation="animate--tilt2">Blog</span>
-      </div>
-      <!-- Menu principal fin -->
-    </h>
+<!-- Menu -->
+        <div class="panel__animation-list">
+          <span class="js-left">│Web Design│</span>
+          <span class="js-right">│Marketing│</span>
+          <span class="js-down">│Contactanos│</span>
+          <span>│Blog│</span>
+        </div>
+    </div>
     <div class="panel" data-x-pos="0"  data-y-pos="1">
       <span class="panel__nav panel__nav--left js-left">left</span>
       <span class="panel__nav panel__nav--right js-right">right</span>
       <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
       <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h3>Creacion de contenido</h3>
+      <h1>Up</h1>
     </div>
     <div class="panel" data-x-pos="-1"  data-y-pos="1">
       <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
       <span class="panel__nav panel__nav--right js-right">right</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h3>Up Left</h3>
+      <h1>Up Left</h1>
     </div>
     <div class="panel" data-x-pos="1"  data-y-pos="1">
       <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
       <span class="panel__nav panel__nav--left js-left">left</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h3>Up Right</h3>
+      <h1>Up Right</h1>
     </div>
     <div class="panel" data-x-pos="-1"  data-y-pos="0">
       <span class="panel__nav panel__nav--up js-up">up</span>
@@ -126,19 +129,19 @@
       <span class="panel__nav panel__nav--right js-right">right</span>
       <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h3>Left</h3>
+      <h1>Left</h1>
     </div>
     <div class="panel" data-x-pos="-1"  data-y-pos="-1">
       <span class="panel__nav panel__nav--up js-up">up</span>
       <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
       <span class="panel__nav panel__nav--right js-right">right</span>
-      <h3>Down Left</h3>
+      <h1>Down Left</h1>
     </div>
     <div class="panel" data-x-pos="1"  data-y-pos="-1">
       <span class="panel__nav panel__nav--up js-up">up</span>
       <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
       <span class="panel__nav panel__nav--left js-left">left</span>
-      <h3>Down Right</h3>
+      <h1>Down Right</h1>
     </div>
     <div class="panel" data-x-pos="1"  data-y-pos="0">
       <span class="panel__nav panel__nav--up js-up">up</span>
@@ -146,83 +149,85 @@
       <span class="panel__nav panel__nav--left js-left">left</span>
       <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
       <span class="panel__nav panel__nav--down js-down">down</span>
-      <h3>Right</h3>
+      <h1>Right</h1>
     </div>
+<!-- Caja de contacto -->
+
     <div class="panel" data-x-pos="0"  data-y-pos="-1">
-      <span class="panel__nav panel__nav--up js-up">up</span>
-      <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
-      <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
-      <span class="panel__nav panel__nav--left js-left">left</span>
-      <span class="panel__nav panel__nav--right js-right">right</span>
+      <span class="panel__nav panel__nav--up js-up"><h4>Inicio</h4></span>
+      <span class="panel__nav panel__nav--left-top js-up js-left"><h4>Web Design│</h4></span>
+      <span class="panel__nav panel__nav--right-top js-up js-right"><h4>Marketing</h4></span>
+      <span class="panel__nav panel__nav--left js-left"><h4>Servidores</h4></span>
+      <span class="panel__nav panel__nav--right js-right"><h4>Team</h4></span>
+<!-- Contacto -->
+<div class="padre">
+  <div>
+    <h3>¿Quieres un café con algo de SEO optimización? ¡Es gratis! </h3>
+    <h4>Platícanos qué necesitas y nosotros te ayudaremos con una solución específica pensada sobre datos</h4>
+  </div>
+  <br> 
 
-<div  class="box">
-<div class="cente">
-      <h3>¿Quieres un café con algo de SEO optimización? ¡Es gratis! </h3>
-      <h4>Platícanos qué necesitas y nosotros te ayudaremos con una solución específica pensada sobre datos</h4>
-    </div>
 
-      <!-- Cajas de iconos de contacto -->
-      <form id="central" class="cont">
-     <!-- Control -->
+
+<!-- Formulario de contacto -->
+<form class="hijo">
+  <!-- Control -->
 <div class='wrapper'>
 </div>
 <!-- Validas-->
 <!-- Whatsaapp-->
 <div class='wrapper'>
 <div class='container'>
-  <div class='box-front'>
-    <p>WhatsApp</p>
-  </div>
-  <div class='box-bottom'>
-    <p>
-      <a class="link"href="https://bit.ly/2YHYB65" target="_blank" rel="noopener" title="WhatsApp"> Whatsappeame</a>
-    </p>
-  </div>
+<div class='box-front'>
+ <p>WhatsApp</p>
+</div>
+<div class='box-bottom'>
+ <p>
+   <a class="link"href="https://bit.ly/2YHYB65" target="_blank" rel="noopener" title="WhatsApp"> Whatsappeame</a>
+ </p>
+</div>
 </div>
 </div>
 <!-- Facebook-->
 <div class='wrapper'>
 <div class='container'>
-  <div class='box-front fa1'>
-    <p>Messenger</p>
-  </div>
-  <div class='box-bottom fa2'>
-    <p>
-      <a class="link"href="m.me/UdxCreativos" target="_blank" rel="noopener" title="Messenger"> O Chateemos</a>
-    </p>
-  </div>
+<div class='box-front fa1'>
+ <p>Messenger</p>
+</div>
+<div class='box-bottom fa2'>
+ <p>
+   <a class="link"href="m.me/UdxCreativos" target="_blank" rel="noopener" title="Messenger"> O Chateemos</a>
+ </p>
+</div>
 </div>
 </div>
 <!-- Hubspot-->
 <div class='wrapper'>
 <div class='container'>
-  <div class='box-front hu1'>
-    <p>Mail</p>
-  </div>
-  <div class='box-bottom hu2'>
-    <p>
-      <a class="link"href="http://bit.ly/UdxCreativos-Hub" target="_blank" rel="noopener" title="Mail"> O déjanos tus datos</a>
-    </p>
-  </div>
+<div class='box-front hu1'>
+ <p>Mail</p>
+</div>
+<div class='box-bottom hu2'>
+ <p>
+   <a class="link"href="http://bit.ly/UdxCreativos-Hub" target="_blank" rel="noopener" title="Mail"> O déjanos tus datos</a>
+ </p>
 </div>
 </div>
-  </form>
 </div>
+</form>
 </div>
 
 
-</div>
-  </div>
-</div>
-</div>
-</div>
+
+
+
+
 
     </div>
   </div>
 </div>
-<!-- scripts -->
-  <script src="./assets/js/script.js"></script>
-  <script src="assets/js/pw.js"></script>
-  <script src="assets/js/prefixfree.min.js"></script>
-</html>
+<!-- partial -->
+  <script  src="assets/js/script.js"></script>
 
+</body>
+</html>

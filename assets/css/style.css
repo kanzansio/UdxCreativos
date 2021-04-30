@@ -1,14 +1,5 @@
-/**
- Configuracion basica
- * -------------------------------------------------------------------
- */
-
- @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue);
-
-
 body {
   background-color: #000000;
-  background-image: url();
   background-repeat: repeat;
   color: white;
   font-family: 'Bebas Neue';
@@ -22,102 +13,11 @@ body {
 .link { color: #ebdc0e; }
 .link:hover { color: #e4bb03; }
 
-/**
- *Etiquetas H
- *
- * -------------------------------------------------------------------
- */
-  /* Calculation */
-  * {
+ /* Calculation */
+ * {
   --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420))); /* Ranges from 421px to 1199px */
 }
 
-
-
-h1 {
-  text-transform: uppercase;
-  font-family:Impact;
-  display: inline-block;
-  position: absolute;
-  --max-font: 160;
-  --min-font: 80;
-  font-size: var(--responsive);
-  left: 50%;
-  line-height: 1;
-  position: absolute;
-  text-align: center;
-  top: 36%;
-  transform: translateX(-50%) translateY(-50%);
-  user-select: none;
-}
-h2 {
-  text-align: center;
-  --max-font: 30;
-  --min-font: 10;
-  font-size: var(--responsive);
-}
-h3 {
-  text-align: center;
-  --max-font: 23;
-  --min-font: 15;
-  font-size: var(--responsive);
-}
-
-h4 {
-  text-align: center;
-  --max-font: 15;
-  --min-font: 8;
-  font-size: var(--responsive);
-}
-p {
-  text-align: center;
-
-}
-
-
-.box{
-  max-width: 100% ;
-  max-height: 100%;
-  display: inline-block;
-  
-
-}
-.cente{
-  padding: 5%;
-  display: inline-block;
-   left: 50%;
-   position: absolute;
-   top: 40%;
-   transform: translateX(-50%) translateY(-50%) translateY(-18vmin);
-   transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
-   user-select: none;
-   z-index: -1;
- }
-.cont{
-  
-  --max-font: 19;
-  --min-font: 8;
-  font-size: var(--responsive);
-  display: inline-table;
-  position: relative;
-  top: 50%;
-
- 
-
-  
-}
-
-
-
-
-
-
-
-/**
- * Sitio
- *
- * -------------------------------------------------------------------
- */
 .site-wrap {
   transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 }
@@ -128,6 +28,118 @@ p {
   height: 100vh;
   width: 100vw;
 }
+
+h1 {
+  font-size: 20vmin;
+  margin: auto  0vmax;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+}
+
+
+@media only screen and (max-width: 650px) {
+  h1 {
+  margin-top: -4vw;
+  }
+
+  @media only screen and (max-width: 450px) {
+    h1 {
+    margin-top: -8vw;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+  h1 {
+  margin-top: -10vw;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  h1 {
+  margin-top: -12vw;
+
+  }
+}
+}
+
+h2
+{
+  --max-font: 28;
+  --min-font: 12;
+  font-size: var(--responsive);
+}
+h3
+{
+  --max-font: 25;
+  --min-font: 14;
+  font-size: var(--responsive);
+}
+h4
+{
+  --max-font: 18;
+  --min-font: 12;
+  font-size: var(--responsive);
+}
+p
+{
+  --max-font: 20;
+  --min-font: 8;
+  font-size: var(--responsive);
+}
+
+/* Centrar Box */
+
+.padre {
+  display: inline-table;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11%;
+  margin-left: 15%;
+  margin-right: 15%;
+  z-index: -5;
+  
+}
+
+.hijo {
+  display: inline-table;
+}
+@media only screen and (max-width: 1350px) {
+  .padre {
+    padding-top: 15%;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .padre{
+      padding-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+  .padre {
+    padding-top: 25%;
+  }
+  .hijo {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .padre {
+    padding-top: 35%;
+  }
+  .hijo {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+}
+}
+
+ /* Responsiva de la web */
 .panel-wrap {
   perspective: 2000px;
   transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
@@ -172,7 +184,12 @@ p {
 .animate--tilt2.animate .panel {
   transform: scale(0.8) rotateX(25deg);
 }
-
+.panel h1 {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  user-select: none;
+}
 .panel[data-x-pos="-2"] {
   left: -200%;
 }
@@ -198,6 +215,7 @@ p {
   top: -200%;
 }
 .panel__zoom {
+  text-align: center;
   cursor: pointer;
   left: 50%;
   opacity: 0.2;
@@ -264,24 +282,44 @@ p {
   opacity: 1;
 }
 .panel__animation-list {
-  font-size: 5.3vmin;
-  text-align: center;
+  font-size: 3.5vmin;
   left: 50%;
   position: absolute;
-  top: 58%;
-  transform: translateX(-50%) translateY(-50%) translateY(12vmin);
+  top: 50%;
+  padding-left: 2%;
+  padding-right: 2%;
+  transform: translateX(-50%) translateY(-50%) translateY(18vmin);
+}
+
+@media only screen and (max-width: 650px) {
+  .panel__animation-list  {
+    font-size: 4.3vmin;
+    margin-top: 3%;
+    text-align: center;
+    padding-left: 3%;
+  padding-right: 3%;
+  transform: translateX(-50%) translateY(-50%) translateY(20vmin);
+  }
+  @media only screen and (max-width: 450px) {
+    .panel__animation-list  {
+      font-size: 5.3vmin;
+      text-align: center;
+      margin-top: 2%;
+      padding: 4%;
+    transform: translateX(-50%) translateY(-50%) translateY(26vmin);
+    }
+}
 }
 .panel__animation-list span {
   cursor: pointer;
   display: inline-block;
-  margin: 1%;
   opacity: 0.2;
   position: relative;
   transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
 }
 .panel__animation-list span:after {
-  border-bottom: 0.3vmin solid transparent;
+  border-bottom: 1vmin solid transparent;
   bottom: 0;
   content: "";
   left: -1px;
@@ -305,48 +343,52 @@ p {
  */
 
  svg {
-     display: block;
-     font: 100% 'Bebas Neue';
-     width: 800px;
-     height: 200px;
-     margin: 0 auto;
- }
- .text-copy {
-     fill: none;
-     stroke: white;
-     stroke-dasharray: 6% 27vmax;
-     stroke-width: 5px;
-     stroke-dashoffset: 0%;
-     animation: stroke-offset 5.5s infinite linear;
- }
- .text-copy:nth-child(1){
-   stroke: #fcc35a;
-   animation-delay: -1;
- }
- .text-copy:nth-child(2){
-   stroke: #fde3b4;
-   animation-delay: -2s;
- }
- .text-copy:nth-child(3){
-   stroke: #fdd997;
-   animation-delay: -3s;
- }
- .text-copy:nth-child(4){
-   stroke: #f7a610;
-   animation-delay: -4s;
- }
- .text-copy:nth-child(5){
-   stroke: #FDB731;
-   animation-delay: -5s;
- }
 
- @keyframes stroke-offset{
-   100% {stroke-dashoffset: -35%;}
- }
+  font: 100% 'Bebas Neue';
+  position: inherit;
+  width: 800px;
+  height: 200px;
+  z-index: -10;
+}
 
-.caja{
- position: relative;
- }
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #fcc35a;
+animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+stroke: #fde3b4;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: #fdd997;
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: #f7a610;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: #FDB731;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+
 /**
  *Cubos animacion
  *
@@ -451,12 +493,9 @@ p {
 
 .hu2 {
   background-color: #ffffff;
-  color: #d8ab19;
+  color: #bd930a;
   transform: translate3D(0, 7vmax, -7vmax) rotateX(-90deg);
 }
-
-
-
 
 @-webkit-keyframes boxFlip {
   0%, 15% {
