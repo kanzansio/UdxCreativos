@@ -139,6 +139,15 @@ p
 }
 }
 
+button
+{
+font: inherit;
+font-size: inherit;
+background: inherit;
+position: inherit;
+border: none;
+}
+
  /* Responsiva de la web */
 .panel-wrap {
   perspective: 2000px;

@@ -98,11 +98,15 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 
+
+
 </head>
 
 <!-- Maqueta -->
 
 <body>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a5d4b57bdfbb4d36887b15650072120d"}'></script><!-- End Cloudflare Web Analytics -->
 
 <div class="site-wrap">
   <div class="panel-wrap animate--none">
@@ -200,7 +204,7 @@
     <h3>¿Quieres un café con algo de SEO optimización? ¡Es gratis! </h3>
     <h4>Platícanos qué necesitas y nosotros te ayudaremos con una solución específica pensada sobre datos</h4>
   </div>
-  <br> 
+  <br>
 
 
 
@@ -210,6 +214,7 @@
 <div class='wrapper'>
 </div>
 <!-- Validas-->
+
 <!-- Whatsaapp-->
 <div class='wrapper'>
 <div class='container'>
@@ -217,9 +222,9 @@
  <p>WhatsApp</p>
 </div>
 <div class='box-bottom'>
- <p>
-   <a class="link"href="https://bit.ly/2YHYB65" target="_blank" rel="noopener" title="WhatsApp"> Whatsappeame</a>
- </p>
+    <a class="link"href="https://bit.ly/2YHYB65" target="_blank" rel="noopener" title="WhatsApp"  onclick='FB.AppEvents.logEvent("aClicked")'>
+      <p>Whatsappeame</p>
+    </a>
 </div>
 </div>
 </div>
