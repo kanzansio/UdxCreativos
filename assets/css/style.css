@@ -1,19 +1,5 @@
 
 
-@font-face {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
-  src: url(assets/fonts/bebas-neue.woff2) format('truetype');
-}
-
-@font-face {
-  font-family: 'VT323';
-  font-style: normal;
-  font-weight: 400;
-  src: url(assets/fonts/vt3.ttf) format('truetype');
-}
-
 html,
 body,
 div,
