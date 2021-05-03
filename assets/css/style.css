@@ -2,10 +2,10 @@
   font-family: "Bebas Neue";
   src: url("assets/fonts/bebas-neue.woff2");
 
-  font-family: "VT323 Regular";
+  font-family: "vt323regular";
   src: url("assets/fonts/vt3-webfont.woff2");
 
-  font-family: "VT323 Regular";
+  font-family: "vt323regular";
   src: url("assets/fonts/vt3-webfont.woff");
 }
 
@@ -718,7 +718,7 @@ animation-delay: -5s;
 }
 
 .menu-pantalla {
-  font-family: URL ;
+  font-family: 'vt323regular' ;
   width: auto;
   margin: 1%;
   text-align: center;
