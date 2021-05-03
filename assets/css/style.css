@@ -1,14 +1,18 @@
+
+
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("assets/fonts/bebas-neue.woff2");
-
-  font-family: "vt323regular";
-  src: url("assets/fonts/vt3-webfont.woff2");
-
-  font-family: "vt323regular";
-  src: url("assets/fonts/vt3-webfont.woff");
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/fonts/bebas-neue.woff2) format('truetype');
 }
 
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: url(assets/fonts/vt3.ttf) format('truetype');
+}
 
 html,
 body,
@@ -44,7 +48,6 @@ var,
 b,
 u,
 i,
-center,
 dl,
 dt,
 dd,
@@ -75,7 +78,6 @@ header,
 hgroup,
 menu,
 nav,
-output,
 ruby,
 section,
 summary,
@@ -694,8 +696,10 @@ animation-delay: -5s;
 
 .console-font
 {
+  font-family:'VT323' ;
   color: #14fdce;
   display: inline-table;
+  margin: 1%;
 }
 .pantalla {
   background: #383838;
@@ -704,7 +708,8 @@ animation-delay: -5s;
   line-height: 1.2;
 }
 .sistema {
-  font-size: 4rem;
+  --max-font: 50;
+  --min-font: 28;
   margin-bottom: 1rem;
   text-transform: uppercase;
   text-align: center;
@@ -718,7 +723,7 @@ animation-delay: -5s;
 }
 
 .menu-pantalla {
-  font-family: 'vt323regular' ;
+  font-family: 'VT323' ;
   width: auto;
   margin: 1%;
   text-align: center;
@@ -788,7 +793,9 @@ animation-delay: -5s;
           animation: crt-output 10ms infinite;
   background-color: #031e11;
   position: absolute;
-  padding: 3rem 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
   pointer-events: auto;
   text-shadow: 0rem 0.2rem 1rem #0c7b46;
   z-index: -1;
