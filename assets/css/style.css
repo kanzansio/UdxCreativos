@@ -686,6 +686,9 @@ animation-delay: -5s;
   color: #14fdce;
   display: inline-table;
   margin: 1%;
+  --max-font: 14;
+  --min-font: 8;
+  font-size: var(--responsive);
 }
 .pantalla {
   background: #383838;
